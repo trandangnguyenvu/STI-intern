@@ -15,15 +15,15 @@ import com.sti.intern.entity.User;
 import com.sti.intern.model.dto.UserDto;
 import com.sti.intern.service.UserService;
 
-@RestController
-@RequestMapping("")
+//@RestController
+//@RequestMapping("")
 public class RestAPIHomeController {
-	@Autowired 
-	private UserService userService;
-	
-	@GetMapping("/restapi-home")
-	public ResponseEntity<?> getUser(@AuthenticationPrincipal OAuth2User user) {
-		UserDto result = userService.getUser(user);
-		return ResponseEntity.ok(result);
-	}
+//	@Autowired 
+//	private UserService userService;
+//	
+//	@GetMapping("/restapi-home")
+//	public ResponseEntity<?> getUser(@AuthenticationPrincipal OAuth2User user) {
+//		UserDto result = userService.getUser(user);
+//		return ResponseEntity.ok(result);
+//	}
 }
